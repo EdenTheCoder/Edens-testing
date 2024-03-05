@@ -1,3 +1,16 @@
+//make vars
+let avg;
+let triesSum = 0;
+let tries = [];
+let bestScore = Number.POSITIVE_INFINITY;
+let used;
+let Started;
+let startTime;
+let intervelId;
+let alapsedTimeMS;
+let a;
+let disabled = false;
+
 console.log("Hello why are you here");
 function randInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -40,6 +53,13 @@ function reasetcount() {
 	colorchanged = false;
 }
 
+function reasetAVG() {
+	avg = 0;
+	triesSum = 0;
+	tries = [];
+	document.getElementById("avgScore").innerText = "average : ";
+}
+
 function testRtimeClick() {
 	//changed text and style back
 	document.getElementById("theButtonRtest").style.borderColor = "rgb(255, 0, 242)";
@@ -49,13 +69,27 @@ function testRtimeClick() {
 	//check if score valid
 	if (Started && !used) {
 		alapsedTimeMS = Date.now() - startTime;
-		console.log(alapsedTimeMS);
+		//console.log(alapsedTimeMS);
+		tries.push(alapsedTimeMS);
+		if (tries.length >= 3) {
+			triesSum = 0;
+			for (let i = 0; i < tries.length; i++) {
+				triesSum += tries[i];
+				//console.log("ti " + tries[i]);
+				//console.log("i = " + i);
+				//console.log("t sum = " + triesSum);
+			}
+			//console.log(triesSum);
+			avg = triesSum / tries.length;
+			//console.log(avg);
+			document.getElementById("avgScore").innerText = "average : " + avg;
+		}
 		//set score to score element
-		document.getElementById("score").innerText = alapsedTimeMS;
+		document.getElementById("score").innerText = "score in ms: " + alapsedTimeMS;
 		//set bestscore
-		if (alapsedTimeMS < CbestScore) {
-			CbestScore = alapsedTimeMS;
-			document.getElementById("bestScore").innerText = "Best Score: " + CbestScore;
+		if (alapsedTimeMS < bestScore) {
+			bestScore = alapsedTimeMS;
+			document.getElementById("bestScore").innerText = "Best Score: " + bestScore;
 		}
 	} else {
 		//set to failed
@@ -66,22 +100,14 @@ function testRtimeClick() {
 	disabled = false;
 	Started = true;
 }
-//make vars
-let CbestScore = Number.POSITIVE_INFINITY;
-let used;
-let Started;
-let startTime;
-let intervelId;
-let alapsedTimeMS;
-let a;
-let disabled = false;
+
 function reactionTest() {
 	if (!disabled) {
 		disabled = true;
 		Started = false;
 		alapsedTimeMS = 0;
 		a = randInt(5000, 10000);
-		console.log(a);
+		//console.log(a);
 		document.getElementById("startReactionTest").innerText = "Started";
 		//time out
 		setTimeout(function () {

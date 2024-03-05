@@ -73,7 +73,7 @@ function reactionTest() {
 		disabled = true;
 		Started = false;
 		alapsedTimeMS = 0;
-		a = randInt(3000, 5000);
+		a = randInt(5000, 10000);
 		console.log(a);
 		document.getElementById("startReactionTest").innerText = "Started";
 		//time out

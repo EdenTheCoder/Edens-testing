@@ -41,25 +41,32 @@ function reasetcount() {
 }
 
 function testRtimeClick() {
+	//changed text and style back
 	document.getElementById("theButtonRtest").style.borderColor = "rgb(255, 0, 242)";
 	document.getElementById("theButtonRtest").style.color = "rgb(255, 0, 242)";
 	document.getElementById("theButtonRtest").innerText = "The Button";
 	document.getElementById("startReactionTest").innerText = "Start";
+	//check if score valid
 	if (Started && !used) {
 		alapsedTimeMS = Date.now() - startTime;
 		console.log(alapsedTimeMS);
+		//set score to score element
 		document.getElementById("score").innerText = alapsedTimeMS;
+		//set bestscore
 		if (alapsedTimeMS < CbestScore) {
 			CbestScore = alapsedTimeMS;
 			document.getElementById("bestScore").innerText = "Best Score: " + CbestScore;
 		}
 	} else {
+		//set to failed
 		document.getElementById("score").innerText = "Failed";
 	}
+	//reaset vars
 	used = true;
 	disabled = false;
 	Started = true;
 }
+//make vars
 let CbestScore = Number.POSITIVE_INFINITY;
 let used;
 let Started;

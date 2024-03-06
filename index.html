@@ -7,23 +7,19 @@
 	</head>
 	<body>
 		<div class="centerMe">
-			<div class="text">
-				<!--titels -->
-				<h1>welcome</h1>
-				<h2>To My Site</h2>
-			</div>
+			<!--titels -->
+			<h1 class="largeText">welcome</h1>
+			<h2 class="largeText">To My Site</h2>
 			<!-- hr = devidor-->
 			<hr class="devidor" />
-			<div id="button1">
-				<!-- on click = call function see in javascript-->
-				<button class="buttons" onclick="colorchange()">button</button>
-			</div>
-			<h3 class="color-change" id="changecolor">Click</h3>
-			<h4 id="counter" class="color-change">0</h4>
+			<!-- on click = call function see in javascript-->
+			<button class="buttons" onclick="colorchange()">button</button>
+			<h3 class="normalText" id="changecolor">Click</h3>
+			<h4 id="counter" class="normalText">0</h4>
 			<button class="buttons" onclick="reasetcount()">reaset</button>
 
 			<hr class="devidor" />
-			<p class="smallText">
+			<p class="smallerText">
 				test youre reaction time.<br />
 				click "The Button" below <br />
 				when it turns Red <br />
@@ -34,7 +30,7 @@
 			<button class="buttons" id="startReactionTest" onclick="reactionTest()">start</button>
 			<br />
 			<button id="theButtonRtest" onclick="testRtimeClick()">The Button</button>
-			<p class="smallText text" id="score">score in ms:</p>
+			<p class="smallText" id="score">score in ms:</p>
 			<p class="smallText" id="bestScore">Best Score:</p>
 
 			<p class="smallText" id="avgScore">average :</p>

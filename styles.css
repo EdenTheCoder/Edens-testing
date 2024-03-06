@@ -11,19 +11,42 @@ body {
 .centerMe{
     text-align: center;
 }
-
-.text {
-    position: relative;
+/* text sizes */
+.largeText{
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-family: Arial;
+    font-size: 60px;
 }
 
-.smallText {
-    font-weight: lighter;
-    font-size: 20px;
+.normalPlusText{
+    color: white;
     text-align: center;
+    font-family: Arial;
+    font-size: 50px;
 }
+.normalText{
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+}
+.smalltext{
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 25px;
+}
+.smallertext{
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+
+
+
 
 .buttons{
     

@@ -4,6 +4,25 @@ body {
     color: white;
 }
 
+
+ul {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal; 
+}
+a{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+
 .devidor{
     border-image: linear-gradient(to left,blue,red)1 ;
     border-width: 3px;

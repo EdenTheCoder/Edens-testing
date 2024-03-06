@@ -17,31 +17,36 @@ body {
     text-align: center;
     font-family: Arial;
     font-size: 60px;
+    font-weight: bold;
 }
 
 .normalPlusText{
     color: white;
     text-align: center;
     font-family: Arial;
-    font-size: 50px;
+    font-size: 45px;
+    font-weight: normal;
 }
 .normalText{
     color: white;
     text-align: center;
     font-family: Arial;
     font-size: 30px;
+    font-weight: normal;
 }
 .smalltext{
     color: white;
     text-align: center;
     font-family: Arial;
     font-size: 25px;
+    font-weight: normal;
 }
 .smallertext{
     color: white;
     text-align: center;
     font-family: Arial;
     font-size: 20px;
+    font-weight: normal;
 }
 
 

@@ -5,6 +5,16 @@ body {
 }
 
 
+.topBar{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #181818;
+    border-radius: 100px;
+    text-align: center;
+    position: relative;
+}
+
+
 ul {
     color: rgb(255, 255, 255);
     text-align: left;

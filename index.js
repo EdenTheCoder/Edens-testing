@@ -42,8 +42,8 @@ function colorchange() {
 	document.getElementById("counter").innerText = count;
 }
 //create function (will be called by butten see in html)
-function reasetcount() {
-	//reasets count var
+function resetcount() {
+	//resets count var
 	count = 0;
 	//updates count var
 	document.getElementById("counter").innerText = count;
@@ -53,7 +53,7 @@ function reasetcount() {
 	colorchanged = false;
 }
 
-function reasetAVG() {
+function resetAVG() {
 	avg = 0;
 	triesSum = 0;
 	tries = [];
@@ -95,7 +95,7 @@ function testRtimeClick() {
 		//set to failed
 		document.getElementById("score").innerText = "Failed";
 	}
-	//reaset vars
+	//reset vars
 	used = true;
 	disabled = false;
 	Started = true;

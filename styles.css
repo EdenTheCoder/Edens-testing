@@ -6,23 +6,13 @@ body {
 
 
 .topBar{
-    margin: 0;
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-    background: #181818;
-    border-radius: 100px;
-    text-align: center;
-    position: relative;
-}
-
-a{
     color: rgb(255, 255, 255);
-    text-align: center;
     font-family: Arial;
-    font-size: 32px;
-    font-weight: normal;
+    font-size: 30px;
+    font-weight: normal; 
+    text-align: center;
     text-decoration: none;
+    margin: 2%;
 }
 
 

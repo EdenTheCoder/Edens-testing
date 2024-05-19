@@ -111,3 +111,17 @@ button:active{
     font-size: 30px;
     
 }
+#easter-egg{
+    left: -100;
+    opacity: 0;
+    position: fixed;
+    bottom: 20;
+    background: #2f00ff5d;
+    padding: 10px;
+    transition: 1s ease-in-out;
+}
+#easter-egg:hover{
+    opacity: 100%;
+    left: 5;
+    cursor: default;
+}

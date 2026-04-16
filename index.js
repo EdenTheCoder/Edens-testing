@@ -93,7 +93,7 @@ function testRtimeClick() {
 		}
 	} else {
 		//set to failed
-		document.getElementById("score").innerText = "Failed";
+		document.getElementById("score").innerText = "Ingberg Failed";
 	}
 	//reset vars
 	used = true;
